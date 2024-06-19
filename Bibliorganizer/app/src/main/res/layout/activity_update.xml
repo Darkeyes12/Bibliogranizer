@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/book_imageView_actualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bibli" />
+
+        <ImageButton
+            android:id="@+id/imageButton3_actualizar"
+            android:layout_width="149dp"
+            android:layout_height="153dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/foro_button" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp">
+
+            <EditText
+                android:id="@+id/editTextText_registrar_libro_actualizar"
+                style="@style/EdittextStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="0.9"
+                android:ems="10"
+                android:hint="Escriba el titulo"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/editTextText_registrar_libro2_actualizar"
+                style="@style/EdittextStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextText_registrar_libro_actualizar"
+                app:layout_constraintWidth_percent="0.9"
+                android:ems="10"
+                android:hint="Escriba el nombre del autor"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/editTextText_registrar_libro3_actualizar"
+                style="@style/EdittextStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextText_registrar_libro2_actualizar"
+                app:layout_constraintWidth_percent="0.9"
+                android:ems="10"
+                android:hint="Escriba el ISBN del libro"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/editTextText_registrar_libro4_actualizar"
+                style="@style/EdittextStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextText_registrar_libro3_actualizar"
+                app:layout_constraintWidth_percent="0.9"
+                android:ems="10"
+                android:hint="Escriba la editorial del libro"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/editTextText_registrar_libro5_actualizar"
+                style="@style/EdittextStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextText_registrar_libro4_actualizar"
+                app:layout_constraintWidth_percent="0.9"
+                android:ems="10"
+                android:hint="Escriba el genero del libro"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine_actualizar"
+                android:layout_height="50sp"
+                style="@style/EdittextStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextText_registrar_libro5_actualizar"
+                app:layout_constraintWidth_percent="0.9"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Escriba una breve sinopsis del libro"
+                android:inputType="textMultiLine" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <CheckBox
+            android:id="@+id/checkBox_prestado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:text="Prestado" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_cancelar_actualizar"
+                style="@style/ButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:backgroundTint="#BF1C00"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Cancelar" />
+
+            <Button
+                android:id="@+id/button_actualizar"
+                style="@style/ButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:backgroundTint="#77a345"
+                android:text="Actualizar" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

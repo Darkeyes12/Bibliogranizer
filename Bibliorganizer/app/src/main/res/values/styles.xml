@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Define the primary app color -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/black</item>
+
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_rounded_bg</item>
+        <item name="android:textColor">@android:color/white</item> <!-- Color del texto -->
+    </style>
+
+    <style name="EdittextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edittext_rounded_bg</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+
+    <style name="EdittextStyle2" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edittext_rounded_bg</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:paddingStart">10dp</item>
+    </style>
+
+
+
+
+</resources>
