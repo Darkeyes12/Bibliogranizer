@@ -77,37 +77,37 @@
                 android:visibility="gone"
                 app:layout_constraintTop_toBottomOf="@+id/empty_imageview_actualizar_libreria" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="4dp"
+                tools:layout_editor_absoluteY="566dp">
+
+                <Button
+                    android:id="@+id/button_cancelar_actualizar"
+                    style="@style/ButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:backgroundTint="#BF1C00"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="Cancelar" />
+
+                <Button
+                    android:id="@+id/button_actualizar_libros"
+                    style="@style/ButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#77a345"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="Actualizar" />
+            </LinearLayout>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button_cancelar_actualizar"
-                style="@style/ButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="50dp"
-                android:backgroundTint="#BF1C00"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:text="Cancelar" />
-
-            <Button
-                android:id="@+id/button_actualizar_libros"
-                style="@style/ButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#77a345"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:text="Actualizar" />
-        </LinearLayout>
 
 
     </LinearLayout>

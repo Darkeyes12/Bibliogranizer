@@ -12,14 +12,15 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <ImageButton
                 android:id="@+id/regresar_button_organizacion"
                 android:layout_width="56dp"
                 android:layout_height="50dp"
                 android:background="@android:color/transparent"
-                android:tint="#FF0000"
+                android:contentDescription="Regresar a la página anterior"
+                app:tint="#FF0000"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@android:drawable/ic_menu_revert" />
@@ -57,6 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
+                android:contentDescription="Agregar nueva organización"
                 app:srcCompat="@drawable/agregar_button" />
 
         </LinearLayout>

@@ -80,9 +80,10 @@
                 android:layout_marginBottom="28dp"
                 android:background="@android:color/transparent"
                 android:backgroundTint="#FF0000"
+                android:contentDescription="Agregar libro a organización"
                 android:padding="16dp"
                 android:scaleType="fitCenter"
-                android:tint="#00FF00"
+                app:tint="#00FF00"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:srcCompat="@android:drawable/ic_input_add" />

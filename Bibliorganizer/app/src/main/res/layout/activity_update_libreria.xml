@@ -7,7 +7,7 @@
     android:fillViewport="true">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
 
@@ -22,14 +22,17 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="57dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10sp"
+            android:minHeight="48dp"
+            android:gravity="center_vertical"
             android:orientation="horizontal">
 
 
             <EditText
                 android:id="@+id/editTextText_nombre_organizacion_update"
                 android:layout_width="318dp"
+                android:layout_height="48dp"
                 style="@style/EdittextStyle2"
                 android:ems="10"
                 android:hint="Escriba el nombre de la libreria"
@@ -41,6 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
+                android:contentDescription="Agregar libros a la librería"
                 app:srcCompat="@drawable/agregar_button" />
         </LinearLayout>
 
