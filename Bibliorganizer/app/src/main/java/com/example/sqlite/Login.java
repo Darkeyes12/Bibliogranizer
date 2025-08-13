@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,6 +19,10 @@ public class Login extends AppCompatActivity {
 
     private EditText e2; /*contraseña*/
 
+    private boolean isValidEmail(String email) {
+        return email != null && Patterns.EMAIL_ADDRESS.matcher(email).matches();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,11 +36,17 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Obtener los valores ingresados por el usuario
-                String correo = e1.getText().toString();
-                String contrasena = e2.getText().toString();
+                String correo = e1.getText().toString().trim();
+                String contrasena = e2.getText().toString().trim();
 
                 if (correo.isEmpty() || contrasena.isEmpty()) {
                     Toast.makeText(Login.this, "Por favor, complete todos los campos", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                // Validate email format before proceeding
+                if (!isValidEmail(correo)) {
+                    Toast.makeText(Login.this, "Por favor, ingrese un correo electrónico válido", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
